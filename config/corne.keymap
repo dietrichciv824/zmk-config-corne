@@ -11,6 +11,16 @@
 &led_strip { chain-length = <27>; };
 
 / {
+    macros {
+        ctrlaltdel: ctrlaltdel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>;
+
+            label = "CTRLALTDEL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,10 +56,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp N1      &kp N2     &kp N3    &kp N4  &kp N5    &kp N6  &kp N7        &kp N8       &kp N9            &kp N0                             &rgb_ug RGB_TOG
-&trans  &kp TILDE   &kp GRAVE  &kp PIPE  &trans  &trans    &trans  &kp KP_EQUAL  &kp KP_PLUS  &kp KP_SUBTRACT   &kp UNDER                          &rgb_ug RGB_EFF
-&trans  &kp DOLLAR  &trans     &trans    &trans  &trans    &trans  &trans        &trans       &kp LEFT_BRACKET  &rgb_ug RGB_COLOR_HSB(282,100,50)  &rgb_ug RGB_COLOR_HSB(307,100,50)
-                               &trans    &trans  &trans    &trans  &trans        &trans
+&ctrlaltdel  &kp N1      &kp N2     &kp N3    &kp N4  &kp N5    &kp N6  &kp N7        &kp N8       &kp N9            &kp N0                             &rgb_ug RGB_TOG
+&trans       &kp TILDE   &kp GRAVE  &kp PIPE  &trans  &trans    &trans  &kp KP_EQUAL  &kp KP_PLUS  &kp KP_SUBTRACT   &kp UNDER                          &rgb_ug RGB_EFF
+&trans       &kp DOLLAR  &trans     &trans    &trans  &trans    &trans  &trans        &trans       &kp LEFT_BRACKET  &rgb_ug RGB_COLOR_HSB(282,100,50)  &rgb_ug RGB_COLOR_HSB(307,100,50)
+                                    &trans    &trans  &trans    &trans  &trans        &trans
             >;
         };
     };
