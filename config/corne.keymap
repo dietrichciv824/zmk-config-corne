@@ -13,15 +13,6 @@
 &led_strip { chain-length = <27>; };
 
 / {
-    macros {
-        ctrlaltdel: ctrlaltdel {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp DEL>;
-            label = "CTRLALTDEL";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
