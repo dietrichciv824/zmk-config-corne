@@ -53,10 +53,10 @@
             //                            | GUI |     |  SPC  |   | ENT |     | ALT |
 
             bindings = <
-&kp F1     &kp F2           &kp F3           &kp F4           &kp F5           &kp F6         &kp F7     &kp F8     &kp F9    &kp F10   &kp F11   &kp F12
-&kp LCTRL  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans         &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &bootloader    &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                             &kp LGUI         &trans           &kp SPACE      &kp RET    &trans     &kp RALT
+&kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &kp F6         &kp F7           &kp F8           &kp F9           &kp F10          &kp F11                            &kp F12
+&kp PRINTSCREEN  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans         &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(327,100,50)  &kp GRAVE
+&kp LSHFT        &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &bootloader    &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(285,100,50)  &kp TILDE
+                                                   &kp LGUI         &trans           &kp SPACE      &kp RET          &trans           &kp RALT
             >;
         };
     };
