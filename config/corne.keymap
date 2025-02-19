@@ -61,3 +61,15 @@
         };
     };
 };
+
+macro ctrl_alt_del {
+
+    send_key(KC_LCTRL);
+
+    send_key(KC_LALT);
+
+    send_key(KC_DEL);
+
+    release_all();
+
+}
