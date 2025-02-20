@@ -30,7 +30,9 @@
                 <&macro_press>,
                 <&kp LWIN &kp R>,
                 <&macro_release>,
-                <&kp E &kp X &kp P &kp L &kp O &kp R &kp E &kp R &kp DOT &kp E &kp X &kp E &kp ENTER>;
+                <&macro_tap>,
+                <&kp E &kp X &kp P &kp L &kp O &kp R &kp E &kp R &kp DOT &kp E &kp X &kp E &kp ENTER>,
+                <&macro_release>;
 
             label = "NEW_MACRO";
         };
