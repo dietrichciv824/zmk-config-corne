@@ -15,25 +15,14 @@
         ctrlaltdel: ctrlaltdel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>,
-                <&macro_release>;
-
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>;
             label = "CTRLALTDEL";
         };
 
         explorer: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LWIN &kp R>,
-                <&macro_release>,
-                <&macro_tap>,
-                <&kp E &kp X &kp P &kp L &kp O &kp R &kp E &kp R &kp DOT &kp E &kp X &kp E &kp ENTER>,
-                <&macro_release>;
-
+            bindings = <&kp LWIN &kp R &kp E &kp X &kp P &kp L &kp O &kp R &kp E &kp R &kp DOT &kp E &kp X &kp E &kp ENTER>;
             label = "NEW_MACRO";
         };
     };
